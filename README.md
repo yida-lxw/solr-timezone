@@ -8,9 +8,14 @@ This project was build for addressing the solr timezone issue.May be it had both
 * Solr 6.2.1  
 * JDK1.8+
 
-== Prepare
+== Build Project
 
-=== Import jar as following:
+Import source code to IDEA or Eclipse,then use maven command build it into a xxx.jar, the command executed as below:
+
+[source]
+mvn package -Dmaven.test.skip=true
+
+== Import jar as following:
 
 ** solr-6.2.1\dist\solr-solrj-6.2.1.jar  
 

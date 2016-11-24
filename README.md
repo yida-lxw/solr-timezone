@@ -1,9 +1,6 @@
 # solr-timezone
 This project was build for addressing the solr timezone issue.May be it had bother you for a long time,but at this point,let it go,you can use this by anyway in your application to escape away from that issue.
-:toc:
-:toclevels: 4
-:toc-placement!:
-:toc-title:
+
 
 
 === Support
@@ -12,14 +9,19 @@ This project was build for addressing the solr timezone issue.May be it had both
 * JDK1.8+
 
 === Prepare
+
 == Import jar as following:
+
 solr-6.2.1\dist\solr-solrj-6.2.1.jar
 solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar
 
 === How to use?
+
 == config schema.xml:
+
 [source]
- <fieldType name="tcndate" class="test.TrieDateField" precisionStep="6" 
+
+<fieldType name="tcndate" class="test.TrieDateField" precisionStep="6" 
     positionIncrementGap="0"/>
 <fields>
   <field name="id" type="string" indexed="true" stored="true" />
@@ -29,6 +31,7 @@ solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar
 </fields>
 
 == config solrconfig.xml:
+
 </requestHandler>
 ......
 <queryResponseWriter name="json" class="test.JSONResponseWriter">

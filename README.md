@@ -14,8 +14,8 @@ toc::[]
 
 === Import jar as following:
 
-* solr-6.2.1\dist\solr-solrj-6.2.1.jar
-* solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar
+* solr-6.2.1\dist\solr-solrj-6.2.1.jar  
+* solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar  
 
 == How to use?
 

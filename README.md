@@ -3,24 +3,25 @@ This project was build for addressing the solr timezone issue.May be it had both
 
 
 
-=== Support
+== Support
 
 * Solr 6.2.1  
 * JDK1.8+
 
-=== Prepare
+toc::[]
 
-== Import jar as following:
+== Prepare
+
+=== Import jar as following:
 
 solr-6.2.1\dist\solr-solrj-6.2.1.jar
 solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar
 
-=== How to use?
+== How to use?
 
-== config schema.xml:
+=== config schema.xml:
 
 [source]
-
 <fieldType name="tcndate" class="test.TrieDateField" precisionStep="6" 
     positionIncrementGap="0"/>
 <fields>
@@ -30,8 +31,9 @@ solr-6.2.1\dist\solrj-lib\jackson-*-${version}.jar
   <field name="_version_" type="long" indexed="true" stored="true" />
 </fields>
 
-== config solrconfig.xml:
+=== config solrconfig.xml:
 
+[source]
 </requestHandler>
 ......
 <queryResponseWriter name="json" class="test.JSONResponseWriter">
